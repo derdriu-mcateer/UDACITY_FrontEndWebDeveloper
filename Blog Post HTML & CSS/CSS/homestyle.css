@@ -1,0 +1,131 @@
+@import"header.css";
+@import"footer.css";
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+@media only screen and (max-width: 830px) {
+
+  .post_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .post {
+    border-top: dashed 1px rgb(216, 102, 245);
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    font-size: 3vw;
+    text-align: justify;
+    align-items: stretch;
+  }
+
+  button {
+    background-color: rgb(235, 189, 231);
+    color: black;
+    font-size: 14px;
+    justify-content: center;
+    height: 25px;
+    border-radius: 25px;
+    position: relative;
+    margin: 3px;
+    padding: 3px;
+  }
+
+  #info {
+    float: right;
+    position: relative;
+    color: rgb(63, 63, 63);
+    font-size: 16px;
+    margin: 3px;
+    padding: 3px;
+  }
+
+  #socials {
+    display: inline;
+    color: black;
+    align-items: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 4vw;
+    line-height: 1px;
+  }
+
+  img {
+    float:right;
+    margin: 5px;
+    padding: 2px;
+    height: 50%;
+    width: 40%;
+    border-radius: 25%;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+
+  .post_container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 5px;
+      padding: 5px;
+  }
+
+  .post {
+      border-top: dashed 1px rgb(216, 102, 245);
+      flex-wrap: wrap;
+      margin: 5px;
+      padding: 5px;
+      height: auto;
+      width: 47%;
+      position: relative;
+      font-size: 1.5vw;
+      text-align: justify;
+      align-items: stretch;
+  }
+
+  button {
+      background-color: rgb(235, 189, 231);
+      color: black;
+      font-size: 16px;
+      justify-content: center;
+      height: 25px;
+      border-radius: 25px;
+      position: relative;
+      margin: 3px;
+      padding: 3px;
+  }
+
+  #info {
+      float: right;
+      position: relative;
+      color: rgb(63, 63, 63);
+      font-size: 20px;
+      margin: 3px;
+      padding: 3px;
+  }
+
+  h3 {
+      text-align: center;
+      font-size: 2vw;
+      line-height: 1px;
+  }
+
+  img {
+      float: right;
+      margin: 5px;
+      padding: 2px;
+      height: 50%;
+      width: 40%;
+      border-radius: 25%;
+  }
+}

@@ -1,0 +1,260 @@
+@import"header.css";
+@import"footer.css";
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+@media only screen and (max-width: 768px) {
+
+  .post_container {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto auto auto 150px auto auto auto auto;
+    grid-template-areas:
+      "top top top"
+      "navbar navbar navbar"
+      "hero hero hero"
+      "title title title"
+      "info info info"
+      "post post post"
+      "image image image"
+      "avatar author author"
+      "bottom bottom bottom";
+  }
+
+  .grid-item {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+
+  #header {
+    grid-area: top;}
+
+  #navbar {
+    grid-area: navbar;}
+    
+
+  #heroimage {
+    grid-area: hero;}
+
+
+  #title {
+    grid-area: title;
+    font-size: 20px;
+    font: 'Lobster', cursive;
+    padding: 1px;
+    margin: 1px;
+  }
+
+  #info {
+    grid-area: info;
+    border-top: 1px dashed rgb(216, 102, 245);
+    border-bottom: 1px dashed rgb(216, 102, 245);
+    font-size: 20px;
+    margin: 3px 0 3px;
+    padding: 2px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  #post {
+    grid-area: post;
+    text-align: justify;
+    margin: 2px;
+    padding: 2px;
+    font-size: 3vw;
+    align-items: start;
+    position: relative;
+    top: -2%;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+  }
+
+  #post_image {
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+  }
+
+  img {
+    height: 30%;
+    width: 95%;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  h5 {
+    margin: 1px;
+    padding: 1px;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  #author {
+    grid-area: author;
+    border-top: 1px dashed rgb(216, 102, 245);
+    border-bottom: 1px dashed rgb(216, 102, 245);
+    text-align: justify;
+    font-size: 2vw;
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+  }
+
+  #avatar {
+    grid-area: avatar;
+    background-image: url(../IMG/avatar-image.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top: 1px dashed rgb(216, 102, 245);
+    border-bottom: 1px dashed rgb(216, 102, 245);
+    margin: 2px;
+    padding: 2px;
+
+  }
+
+  #footer {
+    grid-area: bottom;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+@media only screen and (min-width:769px) {
+
+
+  .post_container {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto auto auto 150px auto auto auto auto;
+    grid-template-areas:
+      "top top top"
+      "navbar navbar navbar"
+      "hero hero hero"
+      "title title title"
+      "info info info"
+      "image post post"
+      "avatar author author"
+      "bottom bottom bottom";
+  }
+
+  .grid-item {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+
+  #header {
+    grid-area: top;
+  }
+
+  #navbar {
+    grid-area: navbar;
+  }
+
+  #heroimage {
+    grid-area: hero;
+  }
+
+  #title {
+    grid-area: title;
+    font-size: 40px;
+    font: 'Lobster', cursive;
+    padding: 1px;
+    margin: 1px;
+    line-height: 10px;
+  }
+
+  #info {
+    grid-area: info;
+    border-top: 1px dashed rgb(216, 102, 245);
+    border-bottom: 1px dashed rgb(216, 102, 245);
+    font-size: 20px;
+    margin: 5px 0 5px;
+    padding: 3px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  #post {
+    grid-area: post;
+    text-align: justify;
+    margin: 2px;
+    padding: 2px;
+    font-size: 2vw;
+    align-items: start;
+    position: relative;
+    top: -2%;
+  }
+  
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+  }
+
+  #post_image {
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+
+  img {
+    height: 90%;
+    width: 95%;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  figcaption {
+    margin: 1px;
+    padding: 1px;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  #author {
+    grid-area: author;
+    border-top: 1px dashed rgb(216, 102, 245);
+    border-bottom: 1px dashed rgb(216, 102, 245);
+    text-align: justify;
+    font-size: 2vw;
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+  }
+
+  #avatar {
+    grid-area: avatar;
+    background-image: url(../IMG/avatar-image.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top: 1px dashed rgb(216, 102, 245);
+    border-bottom: 1px dashed rgb(216, 102, 245);
+    margin: 2px;
+    padding: 2px;
+
+  }
+
+  #footer {
+    grid-area: bottom;
+  }
+
+}
+
+

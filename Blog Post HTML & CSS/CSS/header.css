@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(245, 255, 249, 0.932);
+}
+
+#header {
+    grid-area: top;
+    align-items: top;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: #29b98e;
+    border-bottom: solid 2px rgb(216, 102, 245);
+    font-size: 100px;
+    font-weight: normal;
+    text-shadow: 1px 0 0 #fff;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    font-family: andale mono, monospace;
+    font-size: 20px;
+    border-bottom: solid 2px rgb(216, 102, 245);
+}
+
+#heroimage {
+    background-image: url(../IMG/pexels-pixabay-159711.jpg);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#socials {
+    display: inline;
+    color: black;
+    align-items: center;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black
+}
